@@ -7,8 +7,7 @@ class TextInput extends Component {
 
     render() {
 
-        const { theme } = this.props
-        console.log(theme)
+        const { theme } = this.props;
 
         const { label, onChange, onBlur, value, name, required, error } = this.props;
         return (

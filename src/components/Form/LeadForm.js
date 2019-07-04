@@ -5,8 +5,7 @@ import "../../theme/style.scss";
 
 class LeadForm extends Component {
     render() {
-        const { requiredFields, theme, formDirection } = this.props
-
+        const { requiredFields, theme, formDirection } = this.props;
         return (
             <div>
                 <Formik
@@ -21,7 +20,7 @@ class LeadForm extends Component {
                         handleChange,
                         handleBlur,
                         handleSubmit,
-                        isSubmitting
+                        isSubmitting,
                     }) => (
                         <form onSubmit={handleSubmit}>
                                 <TextInput
@@ -159,12 +158,13 @@ const initialValues = {
     phone: "",
     mobile: "",
     company_name: "",
-    website: ""
+    website: "",
 }
 
 const validate = (props) => (values) => {
     const errors = {}
     const { requiredFields } = props;
+
     if (!values.email && !values.mobile && !values.phone){
         errors['email'] = "This field is requested by the server"
         errors['phone'] = "This field is requested by the server"
@@ -199,7 +199,6 @@ const validate = (props) => (values) => {
     if(requiredFields.indexOf('website') >= 0  && !values.website) {
         errors['website'] = "This field is required"
     }
-    // TODO Finire la validazione
 
     return errors
 }

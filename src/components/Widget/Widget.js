@@ -13,9 +13,6 @@ export default class Widget extends Component {
     };
 
     postRequest = (url, data) => {
-        console.log("DATA")
-        console.log(data)
-
         return fetch(url, {
             method: "POST",
             body: JSON.stringify(data),
@@ -25,13 +22,10 @@ export default class Widget extends Component {
         }).then(response => response.json());
     };
     handleSubmit = async values => {
-        console.log(values)
+        values['team_id'] = this.props.team_id 
         this.setState({ isLoading: true });
         try {
-            const response = await this.postRequest(
-                "http://localhost/api/public/v1/leads/",
-                values
-            );
+            const response = await this.postRequest(this.props.host, values);
             this.setState({ isLoading: false, isSubmitted: true });
         } catch (e) {
             console.log(e);

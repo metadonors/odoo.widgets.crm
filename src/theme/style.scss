@@ -1,0 +1,39 @@
+@import "variables";
+
+.odoo-widget {
+    .header {
+        h1 {
+            font-size: 33px;}
+    }
+}
+
+.container-div{
+  display:flex;
+  flex: 1;
+  flex-direction:row;
+  padding: .5em 1em .5em 0;
+}
+
+.input-label {
+  width: 20%;
+}
+
+.inner-field-container{
+  display:flex;
+  flex-direction: column;
+  font-size:12px;
+  color:red;
+  flex-grow: 3;
+
+}
+.form-footer{
+  display:flex;
+  justify-content:center;
+  color:red;
+}
+
+.thankyou-text{
+  font-size:30px;
+  
+}
+    

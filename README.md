@@ -1,0 +1,2 @@
+# odoo.widgets.crm
+

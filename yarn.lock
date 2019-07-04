@@ -3552,6 +3552,14 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
+fast-async@^6.3.0:
+  version "6.3.8"
+  resolved "https://registry.yarnpkg.com/fast-async/-/fast-async-6.3.8.tgz#031b9e1d5a84608b117b3e7c999ad477ed2b08a2"
+  integrity sha512-TjlooyqrYm/gOXjD2UHNwfrWkvTbzU105Nk4bvcRTeRoL+wIeK6rqbqDg3CN9z5p37cE2iXhP6SxQFz8OVIaUg==
+  dependencies:
+    nodent-compiler "^3.2.10"
+    nodent-runtime ">=3.2.1"
+
 fast-deep-equal@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz#c053477817c86b51daa853c81e059b733d023614"
@@ -6446,7 +6454,7 @@ node-sass@^4.12.0:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-nodent-compiler@^3.1.6:
+nodent-compiler@^3.1.6, nodent-compiler@^3.2.10:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/nodent-compiler/-/nodent-compiler-3.2.11.tgz#8f4bc703d7d8d0e563f5e09ea22efdce04dbaf9b"
   integrity sha512-rfDrGWdgIJYomPUzR8nXiWNuIhJ7cVodPeZP3Ho65LEycuaX2uVNZ0ytpcfrmUKzdFeLRtye9+pHe8OynPZuPQ==
@@ -6455,6 +6463,11 @@ nodent-compiler@^3.1.6:
     acorn-es7-plugin "^1.1.7"
     nodent-transform "^3.2.9"
     source-map "^0.5.7"
+
+nodent-runtime@>=3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/nodent-runtime/-/nodent-runtime-3.2.1.tgz#9e2755d85e39f764288f0d4752ebcfe3e541e00e"
+  integrity sha512-7Ws63oC+215smeKJQCxzrK21VFVlCFBkwl0MOObt0HOpVQXs3u483sAmtkF33nNqZ5rSOQjB76fgyPBmAUrtCA==
 
 nodent-transform@^3.2.9:
   version "3.2.9"
@@ -7446,6 +7459,13 @@ postcss@^7.0.1:
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+preact-cli-plugin-fast-async@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/preact-cli-plugin-fast-async/-/preact-cli-plugin-fast-async-1.0.1.tgz#9dba988dcbe210a3a2dc69c016f1cc8d34d9693a"
+  integrity sha512-r725LMb7S6iY6HAKspzdzmNM4N9Wa0mRkDrl5b3USjw2rlOMq+krjvNevP5PXZJED/Ym2kipnRHMaR4gtHzQ6A==
+  dependencies:
+    fast-async "^6.3.0"
 
 preact-cli@^2.0.2:
   version "2.2.1"

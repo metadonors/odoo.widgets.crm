@@ -24,7 +24,6 @@ export default class Widget extends Component {
             })
         }).then(response => response.json());
     };
-
     handleSubmit = async values => {
         console.log(values)
         this.setState({ isLoading: true });

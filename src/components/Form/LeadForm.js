@@ -154,7 +154,7 @@ const initialValues = {
     message: "",
     contact_name: "",
     email: "",
-    function: "",
+    job: "",
     phone: "",
     mobile: "",
     company_name: "",
